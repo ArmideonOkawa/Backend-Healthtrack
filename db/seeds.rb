@@ -13,10 +13,10 @@ LIST_PATH = "fdc/v1/foods/list?"
     }
   
     response = HTTP.get(url, params: params)
-    # byebug
+     #byebug
     response.parse
   end
-# byebug
+  #byebug
   list.each do |food|
     Food.get_foods_list(food)
 end
